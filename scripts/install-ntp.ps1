@@ -1,5 +1,3 @@
-#Requires -RunAsAdministrator
-
 $ErrorActionPreference = 'Stop'
 
 $taskName = 'NTP Force Sync'

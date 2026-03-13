@@ -1,6 +1,10 @@
-#Requires -RunAsAdministrator
-
 $ErrorActionPreference = 'Stop'
+
+# Self-elevate if not running as admin
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`""
+    exit
+}
 
 $scriptsDir = "$PSScriptRoot\scripts"
 $scripts = Get-ChildItem -Path $scriptsDir -Filter '*.ps1' | Sort-Object Name
