@@ -1,0 +1,3 @@
+[submodule "ntp"]
+	path = ntp
+	url = git@github.com:scc-tw/ntp-wake-up.git
