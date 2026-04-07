@@ -1,3 +1,6 @@
 [submodule "ntp"]
 	path = ntp
 	url = git@github.com:scc-tw/ntp-wake-up.git
+[submodule "Bear"]
+	path = Bear
+	url = https://github.com/rizsotto/Bear.git
