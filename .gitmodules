@@ -6,4 +6,4 @@
 	url = https://github.com/rizsotto/Bear.git
 [submodule "confluence-cli"]
 	path = confluence-cli
-	url = C:/Users/zxc25/git/confluence-cli
+	url = git@github.com:scc-tw/confluence-cli.git
