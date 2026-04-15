@@ -30,6 +30,7 @@ foreach ($bucket in $buckets) {
 $packages = @(
     # main bucket
     '7zip'
+    'bun'
     'cmake'
     'dark'
     'gettext'
@@ -40,6 +41,7 @@ $packages = @(
     'llvm'
     'neovim'
     'nodejs-lts'
+    'opencode'
     'poetry'
     'python'
     'rust'
@@ -49,6 +51,7 @@ $packages = @(
     'uv'
 
     # extras bucket
+    'jira-cli'
     'keepass'
     'mattermost'
     'obs-studio'
